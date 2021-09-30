@@ -5,8 +5,12 @@ using System.Data.SqlClient;
 
 namespace DapperConsole
 {
+    ///<summary>
+    ///Initial Program
+    ///</summary>
     class Program
     {
+        
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
