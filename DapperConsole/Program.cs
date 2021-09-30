@@ -12,7 +12,7 @@ namespace DapperConsole
     {
         ///<summary>
         ///Main method
-        ///<summary>
+        ///</summary>
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
