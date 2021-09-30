@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace DapperConsole
 {
+    ///<summary>
+    ///People class
+    ///</summary>
     public class People
     {
         public int Id { get; set; }

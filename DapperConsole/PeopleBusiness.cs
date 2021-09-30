@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace DapperConsole
 {
+    ///<summary>
+    ///People Business
+    ///</summary>
     public class PeopleBusiness
     {
         readonly PeopleData data;
@@ -124,9 +127,13 @@ namespace DapperConsole
         {
             Console.WriteLine("People");
             Console.WriteLine("Id   Name      LastName            Age  Gender");
+            if (peopleList is null)
+            {
+                return;
+            }
             foreach (var p in peopleList)
             {
-                Console.WriteLine($"{p.Id.ToString().PadLeft(4,' ')} {p.Name.PadRight(10, ' ')}{p.LastName.PadRight(20, ' ')}{p.Age.ToString().PadRight(5,' ')}{p.Gender}");
+                Console.WriteLine($"{p.Id.ToString().PadLeft(4, ' ')} {p.Name.PadRight(10, ' ')}{p.LastName.PadRight(20, ' ')}{p.Age.ToString().PadRight(5, ' ')}{p.Gender}");
             }
             Console.WriteLine("People");
         }
