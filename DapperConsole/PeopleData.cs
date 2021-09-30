@@ -8,6 +8,9 @@ using Dapper;
 
 namespace DapperConsole
 {
+    ///<summary>
+    ///People Data
+    ///</summary>
     public class PeopleData
     {
         readonly string connectionString;
