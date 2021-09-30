@@ -10,7 +10,9 @@ namespace DapperConsole
     ///</summary>
     class Program
     {
-        
+        ///<summary>
+        ///Main method
+        ///<summary>
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
