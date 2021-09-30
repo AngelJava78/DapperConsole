@@ -116,6 +116,11 @@ namespace DapperConsole
         }
         private void ShowPerson(People p)
         {
+            if(p == null)
+            {
+                Console.WriteLine("People is null or empty");
+                return;
+            }
             Console.WriteLine("People");
             Console.WriteLine($"Id: {p.Id}");
             Console.WriteLine($"Name: {p.Name}");
@@ -125,10 +130,12 @@ namespace DapperConsole
         }
         private void ShowPerson(IEnumerable<People> peopleList)
         {
+            
             Console.WriteLine("People");
             Console.WriteLine("Id   Name      LastName            Age  Gender");
-            if (peopleList is null)
+            if (peopleList == null)
             {
+                Console.WriteLine("People list is null or empty");
                 return;
             }
             foreach (var p in peopleList)
