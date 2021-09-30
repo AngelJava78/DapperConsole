@@ -15,6 +15,9 @@ namespace DapperConsole
         {
             connectionString = @"Data Source=localhost\mssqlserverdev;Initial Catalog=DapperCourse;User Id=sa;Password=0kY_DrYN1(";
         }
+        ///<summary>
+        ///Add new people to database using Dapper
+        ///</summary>
         public int Add(People people)
         {
             var query = "INSERT INTO [dbo].[People] (Name, LastName, Age, Gender) VALUES(@Name, @LastName, @Age, @Gender)";
